@@ -15,15 +15,12 @@
 				<img src="images/hamburger-menu-close-icon.png" width="60px" height="60px;" alt="">
 			</div>
 			<ul>
-				
-					
-				
-			    <li><a href="#main-section">Энергия</a></li>
+				<li><a href="#main-section">Энергия</a></li>
 			    <li><a href="#second-section">Преимущества</a></li>
-			    <li><a href="#third-section">Площадка</a> </li>
-			    <li><a href="#fourth-section">Оборудование</a> </li>
-			    <li><a href="#fifth-section">О нас</a> </li>
-			    <li><a href="#sixth-section">Обеспечиваем</a></li>
+			    <li><a href="#fourth-section">Площадка</a> </li>
+			    <li><a href="#sixth-section">Оборудование</a> </li>
+			    <li><a href="#eighth-section">О нас</a> </li>
+			    <li><a href="#seventh-section">Обеспечиваем</a></li>
 			    <li><a href="#nineth-section">Цены</a> </li>
 			    <li><a href="#tenth-section">Контакты</a></li>
 			</ul>
@@ -32,8 +29,10 @@
 			
 				<div class="header__logo logo">
 					<p>
-						<span class="logo-data">Data</span>
-						<span>force</span>
+						
+							<span class="logo-data">Data</span>
+							<span>force</span>
+						
 					</p>
 				</div>
 				<div class="header__menu">
@@ -42,7 +41,7 @@
 					    	<a href="#main-section">Энергия</a>
 					    </li>
 					    <li>
-					    	<a href="#fifth-section">О нас</a>
+					    	<a href="#eighth-section">О нас</a>
 					    </li>
 					</ul>
 					<ul>
@@ -50,12 +49,12 @@
 					    	<a href="#second-section">Преимущества</a>
 					    </li>
 					    <li>
-					    	<a href="#eighth-section">Обеспечиваем</a>
+					    	<a href="#seventh-section">Обеспечиваем</a>
 					    </li>
 					</ul>
 					<ul>
 					    <li>
-					    	<a href="#third-section">Площадка</a>
+					    	<a href="#fourth-section">Площадка</a>
 					    </li>
 					    <li>
 					    	<a href="#nineth-section">Цены</a>
@@ -63,7 +62,7 @@
 					</ul>
 					<ul>
 					    <li>
-					    	<a href="#fourth-section">Оборудование</a>
+					    	<a href="#sixth-section">Оборудование</a>
 					    </li>
 					    <li>
 					    	<a href="#tenth-section">Контакты</a>
@@ -83,7 +82,6 @@
 			<div id="trailer" class="is_overlay">
 				<video id="video"  autoplay="autoplay" loop="loop" preload="auto">
 					<source src="files/main-video.mp4">
-					
 				</video>
 			</div>
 			<div class="container">
@@ -129,7 +127,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="third-section" id="third-section">
+		<section class="third-section">
 			<div class="container">
 				<div class="third-section__title title">
 					Преимущества
@@ -194,7 +192,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="fifth-section" id="fifth-section">
+		<section class="fifth-section">
 			<div class="container">
 				<div class="fifth-section__items">
 					<div class="service-item">
@@ -235,50 +233,62 @@
 					Мы обеспечиваем
 				</div>
 				<div class="seventh-section__cards">
-					<div class="card card-1">
+					<div class="card card-1" id="1">
 						<div class="card__title">
 							<span>Собственную генерацию энергии</span>
 						</div>
-						<div class="card__button card__button-plus">
+						<div class="card__button card__button-plus" onclick="openCard(1)">
 							<span>+</span>
 						</div>
 						<div class="card__over">
-							<div class="card__title title-white">
+							<div class="card__over__title title-white">
 								<span>Собственную генерацию энергии</span>
 							</div>
-							<div class="card__button card__button-minus">
+							<div class="card__over__text title-white">
+								<p>В нашем распоряжении <span class="title-primary">4 газотурбинных установки Solar Taurus-60 единой мощностью 4.8-5.2 МВт.</span> В общей сложности электрическая мощность достигает 20МВТ</p>
+								<p>Установка сдана в эксплуатацию в 2018 году и оборудована самыми современными <span>системами защиты от сбоев 1-го класса по международной сертификации</span></p>
+							</div>
+							<div class="card__button card__button-minus" onclick="closeCard(1)">
 								<span>_</span>
 							</div>
 						</div>
 					</div>
-					<div class="card card-2">
+					<div class="card card-2" id="2">
 						<div class="card__title">
 							<span>Полную легальность</span>
 						</div>
-						<div class="card__button card__button-plus">
-							<input type="checkbox">+</input>
+						<div class="card__button card__button-plus" onclick="openCard(2)">
+							<span>+</span>
 						</div>
 						<div class="card__over">
-							<div class="card__title title-white">
+							<div class="card__over__title title-white">
 								<span>Полную легальность</span>
 							</div>
-							<div class="card__button card__button-minus">
+							<div class="card__over__text title-white">
+								<p>В нашем распоряжении <span class="title-primary">4 газотурбинных установки Solar Taurus-60 единой мощностью 4.8-5.2 МВт.</span> В общей сложности электрическая мощность достигает 20МВТ</p>
+								<p>Установка сдана в эксплуатацию в 2018 году и оборудована самыми современными <span>системами защиты от сбоев 1-го класса по международной сертификации</span></p>
+							</div>
+							<div class="card__button card__button-minus" onclick="closeCard(2)">
 								<span>_</span>
 							</div>
 						</div>
 					</div>
-					<div class="card card-3">
-						<div class="card__title title-white">
+					<div class="card card-3" id="3">
+						<div class="card__over__title title-white">
 							<span>100%-ную отказоустойчивость</span>
 						</div>
-						<div class="card__button card__button-plus">
+						<div class="card__button card__button-plus" onclick="openCard(3)"">
 							<span>+</span>
 						</div>
 						<div class="card__over">
-							<div class="card__title title-white">
+							<div class="card__over__title title-white">
 								<span>100%-ную отказоустойчивость</span>
 							</div>
-							<div class="card__button card__button-minus">
+							<div class="card__over__text title-white">
+								<p>В нашем распоряжении <span class="title-primary">4 газотурбинных установки Solar Taurus-60 единой мощностью 4.8-5.2 МВт.</span> В общей сложности электрическая мощность достигает 20МВТ</p>
+								<p>Установка сдана в эксплуатацию в 2018 году и оборудована самыми современными <span>системами защиты от сбоев 1-го класса по международной сертификации</span></p>
+							</div>
+							<div class="card__button card__button-minus" onclick="closeCard(3)">
 								<span>_</span>
 							</div>
 						</div>

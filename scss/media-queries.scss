@@ -66,6 +66,7 @@
 	}
 }
 @media screen and (max-width: 1050px){
+
 	section.fifth-section{
 		height: 100% !important;
 	}
@@ -169,6 +170,18 @@
 }
 
 @media screen and (max-width: 760px){
+	.tenth-section{
+		display: flex;
+	 	min-height: 100vh;
+	 	flex-direction: column;
+	 	&__form{
+			flex: 1;
+		}
+		&__conf__wrapper{
+			position: relative;
+  			
+		}
+	}
 	.second-section{
 		&__info{
 			padding: 20px 0px 20px 20px; 
@@ -227,16 +240,16 @@
 	}
 }
 
-@media screen and (min-width: 600px){
-	.tenth-section{
-		&__conf__wrapper{
-			height: 60%;
+// @media screen and (min-width: 600px){
+// 	.tenth-section{
+// 		&__conf__wrapper{
+// 			// height: 160%;
 		
-		}
-	}
+// 		}
+// 	}
 
 	
-}
+// }
 
 @media screen and (max-width: 600px){
 	.advantage-item{
