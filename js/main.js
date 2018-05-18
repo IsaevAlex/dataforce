@@ -10,15 +10,29 @@ function closeNav() {
     document.getElementsByClassName("hamburger-icon")[0].style.display = 'block';
 }
 
+function openCard(){
+    $(".card__over").css("display","block");
+    $(".card__button-plus").css("display","none");
+    $(".card__title").css("display","none");
+}
+
 $(document).ready(function(){
-    $(".header,.left-sidebar").on("click","a", function (event) {
-    	$(".left-sidebar").css( "width", "0" );
-    	// $(".hamburger-icon").css( "display", "block" );
+    $(".header").on("click","a", function (event) {
+        $(".left-sidebar").css( "width", "0" );
         event.preventDefault();
         var id  = $(this).attr('href'),
             top = $(id).offset().top;
         $('body,html').animate({scrollTop: top}, 1500);
     });
+    $(".left-sidebar").on("click","a", function (event) {
+        $(".left-sidebar").css( "width", "0" );
+        $(".hamburger-icon").css( "display", "block" );
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 1500);
+    });
+
 });
 
 $(window).scroll(function(){

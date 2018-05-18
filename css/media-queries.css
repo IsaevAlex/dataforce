@@ -8,6 +8,24 @@
     .eighth-section__list ul li {
       max-width: 250px; } }
 
+@media screen and (max-width: 1227px) {
+  section.eighth-section {
+    height: 100% !important; }
+  section.seventh-section {
+    height: 100% !important; }
+  .seventh-section__cards {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .card {
+    margin: 20px; }
+  .eighth-section__list {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; } }
+
 @media screen and (max-width: 1200px) {
   section.eighth-section {
     height: 100% !important; }
@@ -20,6 +38,10 @@
       margin: 10px 15px; } }
 
 @media screen and (max-width: 1050px) {
+  section.fifth-section {
+    height: 100% !important; }
+  .service-item {
+    padding-bottom: 50px; }
   .fourth-section__title {
     padding-top: 100px;
     max-width: 750px; }
@@ -60,6 +82,15 @@
     font-size: 20px; } }
 
 @media screen and (max-width: 850px) {
+  section.nineth-section {
+    height: 100% !important; }
+  .eighth-section__list {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .service-item {
+    padding-bottom: 20px; }
   .second-section__title {
     padding-top: 150px;
     max-width: 750px; }
@@ -76,6 +107,9 @@
       font-size: 30px; }
     .second-section__info ul li:nth-child(2) span:nth-child(2) {
       font-size: 20px; }
+  .service-item {
+    padding-top: 30px;
+    padding-bottom: 20px; }
   .third-section__title {
     padding-bottom: 40px; }
   .third-section__content {
@@ -100,13 +134,45 @@
   .description {
     font-size: 14px; } }
 
+@media screen and (min-width: 600px) {
+  .tenth-section__conf__wrapper {
+    height: 60%; } }
+
 @media screen and (max-width: 600px) {
+  .advantage-item__text ul li:nth-child(1) {
+    font-size: 25px; }
+  .advantage-item__text ul li:nth-child(2) {
+    font-size: 15px; }
+  .advantage-item__text span {
+    font-size: 15px;
+    width: 200px; }
+  .nineth-section__icons {
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    padding-top: 5%; }
   .title {
     font-size: 30px; }
   .second-section__title, .third-section__title {
     padding-top: 100px; }
+  .second-section__info {
+    padding: 20px 0px 20px 20px; }
+    .second-section__info ul li:nth-child(1) {
+      font-size: 14px; }
+    .second-section__info ul li:nth-child(2) span:nth-child(1) {
+      font-size: 20px; }
+    .second-section__info ul li:nth-child(2) span:nth-child(2) {
+      font-size: 15px; }
   .fourth-section__title {
-    padding-top: 90px; }
+    padding-top: 120px; }
   .fourth-section__info {
     padding: 40px 40px 40px 40px; }
     .fourth-section__info p {
@@ -116,5 +182,37 @@
     font-size: 15px; } }
 
 @media screen and (max-width: 500px) {
+  section.third-section {
+    height: 100% !important; }
+  section.sixth-section {
+    height: 100% !important; }
+  .fourth-section__info {
+    padding: 30px 40px 30px 40px; }
+    .fourth-section__info p {
+      font-size: 14px;
+      max-width: 450px; }
+  .btn {
+    padding: 20px 15px;
+    height: 60px;
+    width: 250px;
+    font-size: 15px; }
+    .btn:after {
+      height: 30px;
+      width: 285px;
+      left: -20px;
+      top: 10px;
+      border: 2px solid #759aff; }
+  .title {
+    font-size: 25px; } }
+
+@media screen and (max-width: 400px) {
+  .service-item {
+    padding-top: 45px; }
   .fourth-section__title {
-    padding-top: 60px; } }
+    padding-top: 100px;
+    font-size: 20px !important; }
+  .fourth-section__info {
+    padding: 15px 15px 15px 15px; }
+    .fourth-section__info p {
+      font-size: 14px;
+      max-width: 450px; } }

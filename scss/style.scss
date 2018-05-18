@@ -2,11 +2,14 @@
 $logo_blue: #1c47e7;
 $header_link: #5878ef;
 
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow-x: hidden; }
 
-body{
-	margin: 0;
-	overflow-x: hidden;
-}
+html {
+  overflow-y: scroll; }
 
 .container{
 	margin: 0 6%;
@@ -53,7 +56,7 @@ ul{
 					font-family: $regular;
 					font-size: 18px;
 					&:hover{
-						color: #000;
+						color: #fff;
 						text-decoration: underline;
 						font-weight: bold;
 					}
@@ -88,19 +91,26 @@ ul{
 
 
 .main-section{
-	
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
 	&__title{
-		margin-top: 200px;
+		
 		max-width: 700px;
-
+		
+		
 	}
 	&__desc{
 		margin-top: 30px;
 		max-width: 380px;
+		
+		
 	}
 	&__btn{
-		margin-top: 30px;
+		
 		left: 20px;
+		margin-top: 30px;
 	}
 }
 
@@ -108,19 +118,20 @@ ul{
 
 #trailer {
 	position: absolute;
-	top: 0; right: 0; left: 0;
+	top: 0; 
+	right: 0; 
+	left: 0;
 	bottom: 0;
-	// z-index: -10000000000;
-
+	overflow: hidden;
 }
 
 #trailer > video {
-    position: absolute;
-    z-index:-3;
+    position: sticky;
+    z-index: -3;
     top: 0;
     left: 0;
     bottom: 0;
- }
+}
 
 .second-section{
 	background: url("../images/second-section.png") no-repeat;
@@ -366,7 +377,7 @@ ul{
 	&__conf__wrapper{
 		background: url("../images/tenth-section-img-2.png") no-repeat;
 		background-size: cover;
-		height: 60%;
+		
 	}
 	&__conf{
 		display: flex;
@@ -472,9 +483,9 @@ ul{
   			font-size: 60px;
   			line-height: 0.7;
   		}
-		&:active{
+		&:hover{
 			cursor: pointer;
-			opacity: 0;
+			
 		}
   	}
   	&__button-plus{
@@ -499,14 +510,28 @@ ul{
   		height: 400px;
   		position: absolute;
   		opacity: 0.7;
+  		transition: 0.5s; 
   		top: 0;
   		display: none;
+  		&__title{
+  			font-family: $xboldIt;
+  			font-size: 24px;
+  			max-width: 240px;
+  			padding: 15px 15px;
+  		}
+  		&__text {
+  			padding: 15px 15px;
+  			font-family: $regular;
+  			span{
+  				color: $header_link;
+  			}
+  		}
   	}
 }
 
-.card__button:active ~ .card__over{
-	display: block;
-}
+// .card__button:active ~ .card__over{
+// 	display: block;
+// }
 
 
 .card-1{

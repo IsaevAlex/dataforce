@@ -32,7 +32,12 @@
 
 body {
   margin: 0;
+  padding: 0;
+  border: 0;
   overflow-x: hidden; }
+
+html {
+  overflow-y: scroll; }
 
 .container {
   margin: 0 6%; }
@@ -82,7 +87,7 @@ ul {
         font-family: ProximaNova-Reg;
         font-size: 18px; }
         .header__menu ul li a:hover {
-          color: #000;
+          color: #fff;
           text-decoration: underline;
           font-weight: bold; }
     .header__menu ul li:nth-child(1) {
@@ -102,17 +107,32 @@ ul {
   .logo span:nth-child(2) {
     color: #1c47e7; }
 
-.main-section__title {
-  margin-top: 200px;
-  max-width: 700px; }
-
-.main-section__desc {
-  margin-top: 30px;
-  max-width: 380px; }
-
-.main-section__btn {
-  margin-top: 30px;
-  left: 20px; }
+.main-section {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .main-section__title {
+    max-width: 700px; }
+  .main-section__desc {
+    margin-top: 30px;
+    max-width: 380px; }
+  .main-section__btn {
+    left: 20px;
+    margin-top: 30px; }
 
 .is_overlay {
   display: block;
@@ -124,10 +144,12 @@ ul {
   top: 0;
   right: 0;
   left: 0;
-  bottom: 0; }
+  bottom: 0;
+  overflow: hidden; }
 
 #trailer > video {
-  position: absolute;
+  position: -webkit-sticky;
+  position: sticky;
   z-index: -3;
   top: 0;
   left: 0;
@@ -410,8 +432,7 @@ ul {
   .tenth-section__conf__wrapper {
     background: url("../images/tenth-section-img-2.png") no-repeat;
     -webkit-background-size: cover;
-            background-size: cover;
-    height: 60%; }
+            background-size: cover; }
   .tenth-section__conf {
     display: -webkit-box;
     display: -webkit-flex;
@@ -538,9 +559,8 @@ ul {
     .card__button span {
       font-size: 60px;
       line-height: 0.7; }
-    .card__button:active {
-      cursor: pointer;
-      opacity: 0; }
+    .card__button:hover {
+      cursor: pointer; }
   .card__button-plus {
     position: absolute;
     bottom: 0;
@@ -560,11 +580,21 @@ ul {
     height: 400px;
     position: absolute;
     opacity: 0.7;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
     top: 0;
     display: none; }
-
-.card__button:active ~ .card__over {
-  display: block; }
+    .card__over__title {
+      font-family: ProximaNova-XboldIt;
+      font-size: 24px;
+      max-width: 240px;
+      padding: 15px 15px; }
+    .card__over__text {
+      padding: 15px 15px;
+      font-family: ProximaNova-Reg; }
+      .card__over__text span {
+        color: #5878ef; }
 
 .card-1 {
   background: url("../images/card-1.png") no-repeat;
