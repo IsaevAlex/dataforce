@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Главная страница</title>
+		<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link href="css/media-queries.css" rel="stylesheet" type="text/css">
+	</head>
+<body>
+		
+		<div class="left-sidebar" id="left-sidebar">
+			<div class="closebtn" onclick="closeNav()">
+				<img src="images/hamburger-menu-close-icon.png" width="60px" height="60px;" alt="">
+			</div>
+			<ul>
+				
+					
+				
+			    <li><a href="#main-section">Энергия</a></li>
+			    <li><a href="#second-section">Преимущества</a></li>
+			    <li><a href="#third-section">Площадка</a> </li>
+			    <li><a href="#fourth-section">Оборудование</a> </li>
+			    <li><a href="#fifth-section">О нас</a> </li>
+			    <li><a href="#sixth-section">Обеспечиваем</a></li>
+			    <li><a href="#nineth-section">Цены</a> </li>
+			    <li><a href="#tenth-section">Контакты</a></li>
+			</ul>
+		</div>
+		<header class="header container">
+			
+				<div class="header__logo logo">
+					<p>
+						<span class="logo-data">Data</span>
+						<span>force</span>
+					</p>
+				</div>
+				<div class="header__menu">
+					<ul>
+					    <li>
+					    	<a href="#main-section">Энергия</a>
+					    </li>
+					    <li>
+					    	<a href="#fifth-section">О нас</a>
+					    </li>
+					</ul>
+					<ul>
+					    <li>
+					    	<a href="#second-section">Преимущества</a>
+					    </li>
+					    <li>
+					    	<a href="#eighth-section">Обеспечиваем</a>
+					    </li>
+					</ul>
+					<ul>
+					    <li>
+					    	<a href="#third-section">Площадка</a>
+					    </li>
+					    <li>
+					    	<a href="#nineth-section">Цены</a>
+					    </li>
+					</ul>
+					<ul>
+					    <li>
+					    	<a href="#fourth-section">Оборудование</a>
+					    </li>
+					    <li>
+					    	<a href="#tenth-section">Контакты</a>
+					    </li>
+					</ul>
+				</div>
+				<div class="header__number">
+					<p class="number">8 800 522 22 22</p>
+				</div>
+				<div class="hamburger-icon">
+					<span onclick="openNav()">
+						<img src="images/hamburger-logo.png" alt="">
+					</span>
+				</div>
+		</header>
+		<section class="main-section" id="main-section">
+			<div id="trailer" class="is_overlay">
+				<video id="video"  autoplay="autoplay" loop="loop" preload="auto">
+					<source src="files/main-video.mp4">
+					
+				</video>
+			</div>
+			<div class="container">
+				<div class="main-section__title title title-white">
+					<span>Специализированная площадка для майнинга криптовалют</span>
+				</div>
+				<div class="main-section__desc description title-white">
+					<span>
+						Размещаем и обслуживаем ваше оборудование для майнинга на площадках с большим запасом электроэнергии.
+					</span>
+				</div>
+				<button class="main-section__btn btn btn-primary">
+					Забронировать место
+				</button> 		
+			</div>
+		</section>
+		<section class="second-section" id="second-section">
+			<div class="container">
+				<div class="second-section__title title">
+					Главное преимущество — <span class="title-primary">собственная энергогенерация</span>
+				</div>
+				<div class="second-section__desc description">
+					<span>
+						В нашем распоряжении 4 газотурбинных установки Solar Taurus-60 единичной мощностью 4.8-5.2 МВт
+					</span>
+				</div>
+				<div class="second-section__info info">
+					<ul>
+					    <li>Электрическая мощность</li>
+					    <li>
+					    	<span>15</span>
+							<span>МВт</span>
+					    </li>
+					</ul>
+					<ul>
+					    <li>Емкость установки оборудования в стойки</li>
+					    <li><span>11500</span><span>серверов</span></li>
+					</ul>
+					<ul>
+					    <li>Годовая выработка электроэнергии</li>
+					    <li><span>148</span><span>млн.кВтч</span></li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<section class="third-section" id="third-section">
+			<div class="container">
+				<div class="third-section__title title">
+					Преимущества
+				</div>
+				<div class="third-section__content">
+					<div class="advantage-item">
+						<div class="advantage-energy advantage-img"></div>
+						<div class="advantage-item__text">
+							<ul>
+								<li>15</li>
+								<li>МВт</li>
+							</ul>
+							<span>Общая электрическая мощность питания нашей площадки</span>
+						</div>
+					</div>
+					<div class="advantage-item">
+						<div class="advantage-count advantage-img"></div>
+						<div class="advantage-item__text">
+							<ul>
+								<li>11500</li>
+								<li>Ед.</li>
+							</ul>
+							<span>Возможность размещения более 11 тыс. единиц оборудования</span>
+						</div>
+					</div>
+					<div class="advantage-item">
+						<div class="advantage-price advantage-img"></div>
+						<div class="advantage-item__text">
+							<ul>
+								<li>4.5</li>
+								<li>Руб</li>
+							</ul>
+							<span>Плата за установку вашего майнинг-оборудования</span>
+						</div>
+					</div>
+					<div class="advantage-item">
+						<div class="advantage-service advantage-img"></div>
+						<div class="advantage-item__text">
+							<ul>
+								<li>24/7</li>
+								
+							</ul>
+							<span>Обслуживание и охрана вашего оборудования</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="fourth-section" id="fourth-section">
+			<div class="container">
+				<div class="fourth-section__title title">
+					Площадка для размещения оборудования
+				</div>
+				<div class="fourth-section__info info">
+					<p>Помещение оборудовано круговым охлаждением: промышленные кондиционеры разделяют потоки воздуха на два коридора — горячий и холодный путем приточки и вытяжки + дополнительный обдув всего оборудования с помощью вентиляторов по всему периметру где расположено оборудование. Температура за счёт этого всегда держится на уровне +20 градусов, что идеально для стабильной работы оборудования. </p>
+					<p>
+						Здание оснащено дизельными подстанциями на случай выключения света в городе, переключение составляет несколько минут. Проход в здание осуществляется строго по пропускам и через 2 поста охраны.
+					</p>
+					<button class="fourth-section__btn btn btn-white">
+						Забронировать место
+					</button> 	
+				</div>
+			</div>
+		</section>
+		<section class="fifth-section" id="fifth-section">
+			<div class="container">
+				<div class="fifth-section__items">
+					<div class="service-item">
+						<img src="images/condi-icon.svg" alt="" class="img-fluid">
+						<h3 class="service-item__subtitle subtitle">Вентиляция</h3>
+						<div class="service-item__desc description">Теплый воздух преобразуется в холодный с подачей через фальшпол</div>
+					</div>
+					<div class="service-item">
+						<img src="images/term-icon.svg" alt="" class="img-fluid">
+						<h3 class="service-item__subtitle subtitle">Температура</h3>
+						<div class="service-item__desc description">В помещении поддерживается температура +20С, идеальная для оборудования</div>
+					</div>
+					<div class="service-item">
+						<img src="images/customer-icon.svg" alt="" class="img-fluid">
+						<h3 class="service-item__subtitle subtitle">Обслуживание</h3>
+						<div class="service-item__desc description">В здании круглосуточно находятся специалисты для мониторинга систем</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="sixth-section" id="sixth-section">
+			<div class="container">
+				<div class="sixth-section__title title">
+					Размещение контейнеров
+				</div>
+				<div class="sixth-section__subtitle subtitle ">
+					Ваши 40 футовые контейнеры
+					для устройств ASIC в надежном месте
+				</div>
+				<div class="sixth-section__desc description">
+					Полностью автономная ферма с управлением процессами через WEB браузер или Telegram c обратной связью о состоянии системы. Конструкция вмещает Antminer S9 или L3+ в количестве 192 шт.
+				</div>
+			</div>
+		</section>
+		<section class="seventh-section" id="seventh-section">
+			<div class="container">
+				<div class="seventh-section__title title">
+					Мы обеспечиваем
+				</div>
+				<div class="seventh-section__cards">
+					<!-- <div class="card card-1">
+						<div class="card__title">
+							<span>Собственную генерацию энергии</span>
+						</div>
+						<div class="card__button card__button-plus">
+							<span>+</span>
+						</div>
+						<div class="card__over">
+							<div class="card__title title-white">
+								<span>Собственную генерацию энергии</span>
+							</div>
+							<div class="card__button card__button-minus">
+								<span>_</span>
+							</div>
+						</div>
+					</div>
+					<div class="card card-2">
+						<div class="card__title">
+							<span>Полную легальность</span>
+						</div>
+						<div class="card__button card__button-plus">
+							<input type="checkbox">+</input>
+						</div>
+						<div class="card__over">
+							<div class="card__title title-white">
+								<span>Полную легальность</span>
+							</div>
+							<div class="card__button card__button-minus">
+								<span>_</span>
+							</div>
+						</div>
+					</div>
+					<div class="card card-3">
+						<div class="card__title title-white">
+							<span>100%-ную отказоустойчивость</span>
+						</div>
+						<div class="card__button card__button-plus">
+							<span>+</span>
+						</div>
+						<div class="card__over">
+							<div class="card__title title-white">
+								<span>100%-ную отказоустойчивость</span>
+							</div>
+							<div class="card__button card__button-minus">
+								<span>_</span>
+							</div>
+						</div>
+					</div> -->
+				</div>
+			</div>
+		</section>
+		<section class="eighth-section" id="eighth-section">
+			<div class="container">
+				<div class="eighth-section__title title">
+					Мы инвестируем в строительство и запуск<span class="title-primary">промышленных центров</span>
+				</div>
+				<div class="eighth-section__desc description">
+					Ответственность управляющей компании
+				</div>
+				<div class="eighth-section__list">
+					<ul>
+						<li>Информация</li><br>
+					    <li>Подготовка КП с расчетами доходности на момент заключения договора;</li>
+					    <li>Сбор информации, аналитика, прогнозы по майнингу и рынку;</li>
+					    <li>оборудование для майнинга на площадках с большим запасом эл</li>
+					</ul>
+					<ul>
+					    <li>Оборудование</li><br>
+					    <li>Пусконаладочные работы, сборка и замена узлов в целях ремонта и модернизации;</li>
+					    <li>Восстановление оборудования после сбоев;</li>
+					    <li>Сбор информации, аналитика, прогнозы по майнингу и рынку</li>
+					</ul>
+					<ul>
+					    <li>Безопасность</li><br>
+					    <li>Контроль доступа в помещение с оборудованием (пропускная система, видеонаблюдение); </li>
+					    <li>Безопасность от затопления</li>
+					    <li>Пожарная безопасность.</li>
+					</ul>
+					<ul>
+					    <li>Помещение</li><br>
+					    <li>Контроль температуры и влажности в помещении для оптимальной работы оборудования;</li>
+					    <li>Регулярная уборка помещения; </li>
+					    <li>Оплата коммунальных услуг.</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<section class="nineth-section" id="nineth-section">
+			<div class="container">
+				<div class="nineth-section__title title">
+					Одна цена за все
+				</div>
+				<div class="nineth-section__price">
+					<h3>4.50</h3>
+					<div class="nineth-section__price__curr" >
+						<span>Р/кВТ</span>
+						<span>с НДС</span>
+					</div>
+				</div>
+				<div class="nineth-section__img">
+					<img src="images/nineth-section.png" alt="">
+				</div>
+				<div class="nineth-section__pricetitle">
+					<span>В стоимость входит:</span>
+				</div>
+				<div class="nineth-section__icons">
+					<div class="nineth-section__icons__item">
+						<img src="images/nineth-section-energy-icon.png" class="img-fluid" alt="">
+						<p>Электроэнергия</p>	
+					</div>
+					<img src="images/plus.png" alt="" class="plus-icon img-fluid">
+					<div class="nineth-section__icons__item">
+						<img src="images/nineth-section-monitoring-icon.png" class="img-fluid" alt="">
+						<p>Оборудование</p>
+					</div>
+					<img src="images/plus.png" alt=""  class="plus-icon img-fluid">
+					<div class="nineth-section__icons__item">
+						<img src="images/nineth-section-equipment-icon.png" class="img-fluid" alt="">
+						<p>Мониторинг</p>
+					</div>
+					<img src="images/plus.png" alt="" class="plus-icon img-fluid">
+					<div class="nineth-section__icons__item">
+						<img src="images/nineth-section-service-icon.png" class="img-fluid" alt="">
+						<p>Обслуживание</p>
+					</div>
+					<img src="images/plus.png" alt="" class="plus-icon img-fluid">
+					<div class="nineth-section__icons__item">
+						<img src="images/nineth-section-connect-icon.png" class="img-fluid" alt="">
+						<p>Переключение пулов</p>
+					</div>
+					<img src="images/plus.png" alt="" class="plus-icon img-fluid">
+					<div class="nineth-section__icons__item">
+						<img src="images/nineth-section-security-icon.png" class="img-fluid" alt="">
+						<p>Гарантия 99% работы</p>
+					</div>
+					
+				</div>
+			</div>
+		</section>
+		<section class="tenth-section" id="tenth-section">
+			<div class="container">
+				<div class="tenth-section__title title">
+					<span>Контакты</span>
+				</div>
+				<div class="tenth-section__form">
+					<form class="contact-form">
+						<div class="contact-form__inputs">
+							<input type="text" name="" placeholder="Ваше имя">
+							<input type="text" name="" placeholder="Ваш телефон">
+							<input type="text" name="" placeholder="Ваш e-mail">
+						</div>
+						<div class="contact-form__button">
+							<button class="btn btn-primary">
+								Забронировать место
+							</button> 	
+						</div>
+					</form>
+				</div>
+			</div>
+				<div class="tenth-section__conf__wrapper">
+					<div class="container">	
+						<div class="tenth-section__conf">
+							<span>Нажимая на кнопку «Отправить» вы даете согласие на обработку персональных данных. Все данные защищены законом «Об обработке персональных данных»</span>
+						</div>
+						<div class="tenth-section__contactinfo">
+							<div class="tenth-section__contactinfo__download">
+								<img src="images/tenth-section__conf-img.png" alt="">
+								<p>
+									<a href="">Скачать презентацию</a>
+								</p>
+							</div>
+							<div class="tenth-section__contactinfo__text">
+								<p>Казань, ул. Московская 28,</p>
+								<p>стр 5. 4200000</p>
+								<p>8 800 522 22 22</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			
+		</section>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script src="js/main.js"></script>
+</body>
+</html>

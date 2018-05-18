@@ -1,0 +1,209 @@
+@media screen and (max-width: 1500px){
+	.eighth-section{
+	
+		&__title{
+			padding-top: 100px;
+			
+		}
+		
+		&__list{
+			
+			padding-top: 20px;
+			ul{
+				li:nth-child(1){
+					font-size: 22px;
+					
+				}
+				li{
+					
+					max-width: 250px;
+				}
+			}
+		}
+	}
+}
+
+
+@media screen and (max-width: 1200px){
+	section.eighth-section{
+		height: 100% !important;
+	}
+
+	.contact-form{
+		&__inputs{
+			justify-content: center;
+			input{
+				margin: 10px 15px;
+			}
+
+		}
+	}
+}
+@media screen and (max-width: 1050px){
+	
+
+	.fourth-section{
+		&__title{
+			padding-top: 100px;
+			max-width: 750px;
+		}
+		&__info{
+			padding: 40px 60px 40px 60px;
+			left: 0;
+		}
+	}
+
+
+	.nineth-section{
+		&__title{
+			padding-top: 100px;
+			padding-bottom: 50px;
+			max-width: 750px;
+		}
+		&__price{
+			h3{
+				font-size: 60px;
+			}
+		}
+	}
+
+	.header{
+		&__menu{
+			display: none;
+		}
+		&__number{
+			display: none;
+		}
+	}
+
+	.hamburger-icon{
+		display: block;
+	}
+
+	.fifth-section{
+		&__items{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-wrap: wrap;
+		}
+	}
+
+	.advantage-item{
+		&__text{
+			ul{
+				li:nth-child(1){
+					font-size: 50px;
+				}
+				li:nth-child(2){
+					font-size: 20px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 850px){
+	.second-section{
+		&__title{
+			padding-top: 150px;
+			max-width: 750px;
+		}
+		&__desc{
+			padding-top: 30px;
+			max-width: 450px;
+		}
+		&__info{
+			padding: 40px 0px 40px 40px; 
+		}
+	}
+}
+
+@media screen and (max-width: 760px){
+	.second-section{
+		&__info{
+			padding: 20px 0px 20px 20px; 
+			ul{
+				li:nth-child(2){
+				   
+					span:nth-child(1){
+						font-size: 30px;
+					}
+					span:nth-child(2){
+						
+						font-size: 20px;
+					}
+				}
+			}
+		}
+	}
+	
+	.third-section{
+		&__title{
+			padding-bottom: 40px;
+		}
+		&__content{
+			display: grid;
+			grid-template-columns: 2fr;
+			grid-row-gap: 50px;
+		}
+	}
+
+	.contact-form{
+		&__inputs{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+	}
+
+	.subtitle{
+		font-size: 20px;
+	}
+
+	.description{
+		font-size: 14px;
+
+	}
+}
+
+@media screen and (max-width: 600px){
+	.title{
+		font-size: 30px;
+	}
+	.second-section,.third-section{
+		&__title{
+			padding-top: 100px;
+		}
+	}
+
+	.fourth-section{
+		&__title{
+			padding-top: 90px;
+		}
+		&__info{
+			padding: 40px 40px 40px 40px;
+			p{
+				font-size: 18px;
+			
+			}
+		}
+	}
+
+	.btn{
+		padding: 15px 10px;
+		font-size: 15px;
+	}
+
+}
+
+@media screen and (max-width: 500px){
+	.fourth-section{
+		&__title{
+			padding-top: 60px;
+		}
+		
+	}
+
+
+}
