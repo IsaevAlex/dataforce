@@ -261,6 +261,9 @@ section.third-section{
 			max-width: 450px;
 		}
 	}
+	&__btn{
+
+	}
 }
 
 .fifth-section{
@@ -734,7 +737,7 @@ section{
 		position: absolute; 
 		left: -20px; 
 		top: 10px;
-		border: 2px solid #759aff;
+		
 	}
 	&:hover{
 		cursor: pointer;
@@ -743,10 +746,16 @@ section{
 	&-primary{
 		color: #759aff;
 		border: 2px solid #759aff;
+		&:after{
+			border: 2px solid #759aff;
+		}
 	}
 	&-white{
 		color: #fff;
 		border: 2px solid #fff;
+		&:after{
+			border: 2px solid #fff;
+		}
 	}
 	&-border{
 		position: absolute;

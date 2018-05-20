@@ -760,17 +760,20 @@ section {
     background: transparent;
     position: absolute;
     left: -20px;
-    top: 10px;
-    border: 2px solid #759aff; }
+    top: 10px; }
   .btn:hover {
     cursor: pointer;
     text-decoration: underline; }
   .btn-primary {
     color: #759aff;
     border: 2px solid #759aff; }
+    .btn-primary:after {
+      border: 2px solid #759aff; }
   .btn-white {
     color: #fff;
     border: 2px solid #fff; }
+    .btn-white:after {
+      border: 2px solid #fff; }
   .btn-border {
     position: absolute;
     width: 300px;
