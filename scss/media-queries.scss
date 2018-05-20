@@ -346,9 +346,9 @@
 		height: 100% !important;
 	}
 
-	section.sixth-section{
-		height: 100% !important;
-	}
+	// section.sixth-section{
+	// 	height: 100% !important;
+	// }
 
 	.fourth-section{
 
@@ -394,6 +394,12 @@
 }
 
 @media screen and (max-width: 400px){
+	.main-section{
+		&__mouse-img{
+			display: none;
+		}
+	}
+
 	.service-item{
 		padding-top: 45px;
 	}
