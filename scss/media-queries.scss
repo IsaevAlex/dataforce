@@ -1,4 +1,8 @@
 @media screen and (max-width: 1500px){
+	section.nineth-section{
+		height: 100% !important;
+	}
+
 	.eighth-section{
 	
 		&__title{
@@ -24,6 +28,7 @@
 }
 
 @media screen and (max-width: 1227px){
+	
 	section.eighth-section{
 		height: 100% !important;
 	}
@@ -138,9 +143,7 @@
 }
 
 @media screen and (max-width: 850px){
-	section.nineth-section{
-		height: 100% !important;
-	}
+	
 
 	.eighth-section{
 		&__list{
@@ -264,6 +267,12 @@
 // }
 
 @media screen and (max-width: 600px){
+	.tenth-section{
+		&__title{
+			text-align: center;
+		}
+	}
+
 	.advantage-item{
 		&__text{
 			ul{
@@ -283,38 +292,47 @@
 
 	.nineth-section{
 		&__icons{
-			justify-content: space-around;
-			flex-direction: column;
-			flex-wrap: wrap;
-			padding-top: 5%;
+			// justify-content: space-around;
+			// // flex-direction: column;
+			// flex-wrap: wrap;
+			// padding-top: 5%;
+			display: grid;
+			grid-template-columns: 2fr 1fr;
 		}
 	}
 	
 	.title{
 		font-size: 30px;
 	}
-	.second-section,.third-section{
+	.second-section{
 		&__title{
-			padding-top: 100px;
+			padding-top: 120px;
 		}
 	}
+
+	.third-section{
+		&__title{
+			padding-top: 50px;
+		}
+	}
+
 
 	.second-section{
 		&__info{
 			padding: 20px 0px 20px 20px; 
 			ul{
 				li:nth-child(1){
-					font-size: 14px;
+					font-size: 18px;
 				}
 
 				li:nth-child(2){
 				   
 					span:nth-child(1){
-						font-size: 20px;
+						font-size: 25px;
 					}
 					span:nth-child(2){
 						
-						font-size: 15px;
+						font-size: 20px;
 					}
 				}
 			}
@@ -346,19 +364,27 @@
 		height: 100% !important;
 	}
 
-	// section.sixth-section{
-	// 	height: 100% !important;
-	// }
+	.sixth-section{
+		&__img{
+			bottom: 0;
+			top: 60%;
+			z-index: -1;
+		}
+	}
 
 	.fourth-section{
 
 		&__info{
 			padding: 30px 40px 30px 40px; 
+			left: 0;
+			right: 0;
+			margin-left: 0;
 			p{
 				
 				font-size: 14px;
 				max-width: 450px;
 			}
+			
 		}
 		
 	}
@@ -380,12 +406,21 @@
 	
 	
 	.title{
-		font-size: 25px;
+		font-size: 27px;
 	}
 
 }
 
 @media screen and (max-height: 730px){
+	.nineth-section{
+		&__price{
+			h3{
+				font-size: 90px;
+				
+			}
+		}
+	}
+
 	.second-section{
 		&__title{
 			max-width: 650px;
@@ -396,6 +431,8 @@
 		&__title{
 			max-width: 600px;
 		}
+		
+
 	}
 }
 
@@ -404,6 +441,25 @@
 		&__mouse-img{
 			display: none;
 		}
+	}
+
+	.second-section{
+		ul{
+				li:nth-child(1){
+					font-size: 14px;
+				}
+
+				li:nth-child(2){
+				   
+					span:nth-child(1){
+						font-size: 18px;
+					}
+					span:nth-child(2){
+						
+						font-size: 16px;
+					}
+				}
+			}
 	}
 
 	.service-item{
