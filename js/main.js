@@ -46,9 +46,17 @@ $(window).scroll(function(){
     if ($(window).scrollTop() > 400) {
         $('.logo-data').css("color","black");
         $('.number').css("color","black");
+        $('header').css("background-color","#fff");
+        // $( ".header__menu>ul>li>a" ).hover(function() {
+        //     $( this ).css("color","#5878ef");
+        // });
     }
     else {
         $('.logo-data').css("color","white");
         $('.number').css("color","white");
+        $('header').css("background-color","transparent");
+        // $( ".header__menu > ul > li > a" ).hover(function() {
+        //     $( this ).css("color","#fff");
+        // });
     }
 });
