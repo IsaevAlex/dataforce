@@ -386,6 +386,12 @@
 }
 
 @media screen and (max-height: 730px){
+	.second-section{
+		&__title{
+			max-width: 650px;
+		}
+	}
+
 	.fourth-section{
 		&__title{
 			max-width: 600px;

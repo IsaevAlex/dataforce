@@ -222,6 +222,8 @@
     font-size: 25px; } }
 
 @media screen and (max-height: 730px) {
+  .second-section__title {
+    max-width: 650px; }
   .fourth-section__title {
     max-width: 600px; } }
 
