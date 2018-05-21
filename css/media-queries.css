@@ -165,7 +165,7 @@
   .eighth-section__desc {
     padding-top: 10px; }
   .eighth-section__list {
-    padding-top: 15px; }
+    padding-top: 10px; }
     .eighth-section__list ul {
       margin-top: 0; }
       .eighth-section__list ul li:nth-child(1) {
@@ -173,7 +173,8 @@
         padding: 0; }
       .eighth-section__list ul li {
         padding-left: 0;
-        padding-top: 0; }
+        padding-top: 0;
+        padding-bottom: 5px; }
   .tenth-section__title {
     text-align: center; }
   .advantage-item__text ul li:nth-child(1) {
@@ -261,6 +262,11 @@
     max-width: 600px; } }
 
 @media screen and (max-width: 400px) {
+  .eighth-section__title {
+    font-size: 24px !important;
+    line-height: 0.9; }
+  .eighth-section__list ul {
+    margin-bottom: 8px; }
   .eighth-section__list ul:nth-child(2n) li {
     padding-right: 0; }
   .main-section__mouse-img {
