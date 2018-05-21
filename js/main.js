@@ -45,18 +45,18 @@ $(document).ready(function(){
 $(window).scroll(function(){
     if ($(window).scrollTop() > 400) {
         $('.logo-data').css("color","black");
+        $('.logo-letter').removeClass('logo-letter-white');
+        $('.logo-letter').addClass('logo-letter-black');
         $('.number').css("color","black");
         $('header').css("background-color","#fff");
-        // $( ".header__menu>ul>li>a" ).hover(function() {
-        //     $( this ).css("color","#5878ef");
-        // });
+        
     }
     else {
         $('.logo-data').css("color","white");
+        $('.logo-letter').removeClass('logo-letter-black');
+        $('.logo-letter').addClass('logo-letter-white');
         $('.number').css("color","white");
         $('header').css("background-color","transparent");
-        // $( ".header__menu > ul > li > a" ).hover(function() {
-        //     $( this ).css("color","#fff");
-        // });
+        
     }
 });

@@ -86,10 +86,32 @@ ul{
 .logo{
 	font-family: $black;
 	font-size: 33px;
+	&-letter{
+		&-white{
+			background: url("../images/logo-white.png") no-repeat;
+			background-size: contain;
+			width: 30px;
+			height: 31px;	
+		}
+		&-black{
+			background: url("../images/logo-black.png") no-repeat;	
+			background-size: contain;
+			width: 30px;
+			height: 31px;
+		}
+	}
+
+	
+	p{
+		display: flex;
+		align-items: flex-end;
+	}
+
 	span:nth-child(1){
+		
 		color: #fff;
 	}
-	span:nth-child(2){
+	&-force{
 		color: $logo_blue;
 	}
 }

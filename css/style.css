@@ -103,9 +103,30 @@ ul {
 .logo {
   font-family: ProximaNova-Black;
   font-size: 33px; }
+  .logo-letter-white {
+    background: url("../images/logo-white.png") no-repeat;
+    -webkit-background-size: contain;
+            background-size: contain;
+    width: 30px;
+    height: 31px; }
+  .logo-letter-black {
+    background: url("../images/logo-black.png") no-repeat;
+    -webkit-background-size: contain;
+            background-size: contain;
+    width: 30px;
+    height: 31px; }
+  .logo p {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+        -ms-flex-align: end;
+            align-items: flex-end; }
   .logo span:nth-child(1) {
     color: #fff; }
-  .logo span:nth-child(2) {
+  .logo-force {
     color: #1c47e7; }
 
 .main-section {

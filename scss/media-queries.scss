@@ -50,7 +50,19 @@
 
 	.eighth-section{
 		&__list{
-			justify-content: center;
+			// justify-content: center;
+			ul{
+				li:nth-child(1){
+					font-size: 18px;
+					padding-left: 0;
+				}
+				li{
+					padding-left: 0;
+				}
+			}
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			
 		}
 	}
 }
@@ -174,6 +186,17 @@
 }
 
 @media screen and (max-width: 760px){
+	.service-item{
+		img{
+			width: 60px;
+			height: 60px;
+		}
+		padding-top: 10px;
+		
+		&__subtitle{
+			margin-bottom: 10px;
+		}
+	}
 	.main-section{
 		&__img{
 			display: none;
@@ -217,13 +240,8 @@
 	}
 
 	.service-item{
-		padding-top: 30px;
-		padding-bottom: 20px;
+		padding-bottom: 10px;
 	}
-
-	// section.fourth-section{
-	// 	height: 100% !important;
-	// }
 	
 	.third-section{
 		&__title{
@@ -371,6 +389,16 @@
 			top: 60%;
 			z-index: -1;
 		}
+
+		&__subtitle{
+			padding-top: 70px;	
+		}
+
+		&__desc{
+			
+			padding-top: 20px;	
+		}
+
 	}
 
 	.fourth-section{
@@ -379,7 +407,7 @@
 			padding: 30px 40px 30px 40px; 
 			left: 0;
 			right: 0;
-			margin-left: 0;
+			// margin-left: 0;
 			p{
 				
 				font-size: 14px;
@@ -463,9 +491,7 @@
 			}
 	}
 
-	.service-item{
-		padding-top: 45px;
-	}
+	
 
 	.card{
 		&__button{
