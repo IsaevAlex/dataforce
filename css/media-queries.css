@@ -86,11 +86,6 @@
     font-size: 20px; } }
 
 @media screen and (max-width: 850px) {
-  .eighth-section__list {
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between; }
   .service-item {
     padding-bottom: 20px; }
   .second-section__title {
@@ -167,6 +162,18 @@
     font-size: 14px; } }
 
 @media screen and (max-width: 600px) {
+  .eighth-section__desc {
+    padding-top: 10px; }
+  .eighth-section__list {
+    padding-top: 15px; }
+    .eighth-section__list ul {
+      margin-top: 0; }
+      .eighth-section__list ul li:nth-child(1) {
+        font-size: 16px;
+        padding: 0; }
+      .eighth-section__list ul li {
+        padding-left: 0;
+        padding-top: 0; }
   .tenth-section__title {
     text-align: center; }
   .advantage-item__text ul li:nth-child(1) {
@@ -176,9 +183,15 @@
   .advantage-item__text span {
     font-size: 15px;
     width: 200px; }
+  .nineth-section__title {
+    padding-bottom: 30px; }
   .nineth-section__icons {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr; }
+    .nineth-section__icons__item {
+      padding: 10px 10px; }
+      .nineth-section__icons__item p {
+        font-size: 15px; }
   .title {
     font-size: 30px; }
   .second-section__title {
@@ -235,9 +248,13 @@
   .title {
     font-size: 27px; } }
 
+@media screen and (min-height: 800px) {
+  section.nineth-section {
+    height: 100vh !important; } }
+
 @media screen and (max-height: 730px) {
   .nineth-section__price h3 {
-    font-size: 90px; }
+    font-size: 80px; }
   .second-section__title {
     max-width: 650px; }
   .fourth-section__title {
@@ -246,6 +263,14 @@
 @media screen and (max-width: 400px) {
   .main-section__mouse-img {
     display: none; }
+  .nineth-section__price h3 {
+    font-size: 50px; }
+  .nineth-section__price__curr span:nth-child(1) {
+    font-size: 25px; }
+  .nineth-section__price__curr span:nth-child(2) {
+    font-size: 18px; }
+  .nineth-section__pricetitle {
+    font-size: 20px; }
   .second-section ul li:nth-child(1) {
     font-size: 14px; }
   .second-section ul li:nth-child(2) span:nth-child(1) {
