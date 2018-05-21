@@ -107,7 +107,7 @@ ul{
 		align-items: flex-end;
 	}
 
-	span:nth-child(1){
+	&-data{
 		
 		color: #fff;
 	}
@@ -237,10 +237,6 @@ ul{
 
 		}
 	}
-}
-
-section.third-section{
-	height: 100% !important;
 }
 
 .third-section{

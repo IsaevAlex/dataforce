@@ -178,7 +178,7 @@
     width: 200px; }
   .nineth-section__icons {
     display: grid;
-    grid-template-columns: 2fr 1fr; }
+    grid-template-columns: 1fr 1fr 1fr 1fr; }
   .title {
     font-size: 30px; }
   .second-section__title {

@@ -124,7 +124,7 @@ ul {
     -webkit-align-items: flex-end;
         -ms-flex-align: end;
             align-items: flex-end; }
-  .logo span:nth-child(1) {
+  .logo-data {
     color: #fff; }
   .logo-force {
     color: #1c47e7; }
@@ -252,9 +252,6 @@ ul {
       .second-section__info ul li:nth-child(2) span:nth-child(2) {
         font-family: ProximaNova-Light;
         font-size: 30px; }
-
-section.third-section {
-  height: 100% !important; }
 
 .third-section {
   background: url("../images/third-section.png") no-repeat;
