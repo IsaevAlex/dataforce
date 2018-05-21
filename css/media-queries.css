@@ -1,3 +1,7 @@
+@media screen and (min-width: 1200px) {
+  .contact-form__inputs {
+    padding-top: 50px; } }
+
 @media screen and (max-width: 1500px) {
   section.nineth-section {
     height: 100% !important; }
@@ -8,7 +12,9 @@
     .eighth-section__list ul li:nth-child(1) {
       font-size: 22px; }
     .eighth-section__list ul li {
-      max-width: 250px; } }
+      max-width: 250px; }
+  .second-section__info {
+    padding: 20px 20px 20px 20px; } }
 
 @media screen and (max-width: 1400px) {
   .card {
@@ -61,6 +67,8 @@
   .fourth-section__info {
     padding: 40px 60px 40px 60px;
     left: 0; }
+    .fourth-section__info p {
+      max-width: 100%; }
   .nineth-section__title {
     padding-top: 100px;
     padding-bottom: 50px;

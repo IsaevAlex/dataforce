@@ -1,3 +1,13 @@
+@media screen and (min-width: 1200px){
+	.contact-form{
+		&__inputs{
+			padding-top: 50px;
+		}
+	}
+
+
+}
+
 @media screen and (max-width: 1500px){
 	section.nineth-section{
 		height: 100% !important;
@@ -24,6 +34,12 @@
 					max-width: 250px;
 				}
 			}
+		}
+	}
+
+	.second-section{
+		&__info{
+			padding: 20px 20px 20px 20px;		
 		}
 	}
 }
@@ -114,6 +130,9 @@
 		&__info{
 			padding: 40px 60px 40px 60px;
 			left: 0;
+			p{
+				max-width: 100%;
+			}
 		}
 	}
 
