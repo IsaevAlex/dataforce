@@ -28,6 +28,17 @@
 	}
 }
 
+@media screen and (max-width: 1400px){
+	.card{
+		width: 350px;
+		margin-right: 20px;
+  		&__over{
+	  		width: 350px;
+  		}
+  	}
+}
+
+
 @media screen and (max-width: 1227px){
 	
 	section.eighth-section{
@@ -42,6 +53,7 @@
 		&__cards{
 
 			justify-content: center;
+			flex-wrap: wrap;
 		}
 	}
 
@@ -187,6 +199,11 @@
 }
 
 @media screen and (max-width: 760px){
+	.card{
+		margin-right: 0;
+  		
+  	}
+
 	.service-item{
 		img{
 			width: 60px;
@@ -414,6 +431,26 @@
 }
 
 @media screen and (max-width: 500px){
+	.nineth-section{
+		&__title{
+			text-align: center;
+		}
+		&__price{
+			padding-left: 45px;
+		}
+	}
+	.main-section{
+		&__mouse-img{
+			display: none;
+		}
+		display: flex;
+		justify-content: flex-end;
+		&__btn{
+			margin-bottom: 50px;
+		}
+
+	}
+
 	section.third-section{
 		height: 100% !important;
 	}
@@ -454,14 +491,14 @@
 	}
 	
 	.btn{
-		padding: 20px 15px;
+		padding: 10px 10px;
 		height: 60px; 
-	  	width: 250px;
+	  	width: 200px;
 	  	font-size: 15px;
 		&:after {
 			
 			height: 30px; 
-			width: 285px;
+			width: 230px;
 			left: -20px; 
 			top: 10px;
 			border: 2px solid #759aff;
@@ -483,6 +520,17 @@
 }
 
 @media screen and (max-height: 730px){
+	.left-sidebar{
+		 ul{
+	    	li {
+	    		padding: 20px 15px;
+	    		a{ 
+		    		font-size: 25px;
+		    	}
+		    }
+		}
+	}
+
 	.nineth-section{
 		&__price{
 			h3{
@@ -490,6 +538,7 @@
 				
 			}
 		}
+
 
 	}
 
@@ -527,11 +576,7 @@
 		}
 	}
 
-	.main-section{
-		&__mouse-img{
-			display: none;
-		}
-	}
+	
 	
 	.nineth-section{
 		&__price{
@@ -541,10 +586,10 @@
 			}
 			&__curr{
 				span:nth-child(1){
-					font-size: 25px;
+					font-size: 20px;
 				}
 				span:nth-child(2){
-					font-size: 18px;
+					font-size: 14px;
 				}
 			}
 		}

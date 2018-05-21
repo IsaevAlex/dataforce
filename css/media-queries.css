@@ -10,6 +10,13 @@
     .eighth-section__list ul li {
       max-width: 250px; } }
 
+@media screen and (max-width: 1400px) {
+  .card {
+    width: 350px;
+    margin-right: 20px; }
+    .card__over {
+      width: 350px; } }
+
 @media screen and (max-width: 1227px) {
   section.eighth-section {
     height: 100% !important; }
@@ -19,7 +26,10 @@
     -webkit-box-pack: center;
     -webkit-justify-content: center;
         -ms-flex-pack: center;
-            justify-content: center; }
+            justify-content: center;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
   .eighth-section__list {
     display: grid;
     grid-template-columns: 1fr 1fr; }
@@ -98,6 +108,8 @@
     padding: 40px 0px 40px 40px; } }
 
 @media screen and (max-width: 760px) {
+  .card {
+    margin-right: 0; }
   .service-item {
     padding-top: 10px; }
     .service-item img {
@@ -218,6 +230,23 @@
     font-size: 15px; } }
 
 @media screen and (max-width: 500px) {
+  .nineth-section__title {
+    text-align: center; }
+  .nineth-section__price {
+    padding-left: 45px; }
+  .main-section {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
+    .main-section__mouse-img {
+      display: none; }
+    .main-section__btn {
+      margin-bottom: 50px; }
   section.third-section {
     height: 100% !important; }
   .sixth-section__img {
@@ -236,13 +265,13 @@
       font-size: 14px;
       max-width: 450px; }
   .btn {
-    padding: 20px 15px;
+    padding: 10px 10px;
     height: 60px;
-    width: 250px;
+    width: 200px;
     font-size: 15px; }
     .btn:after {
       height: 30px;
-      width: 285px;
+      width: 230px;
       left: -20px;
       top: 10px;
       border: 2px solid #759aff; }
@@ -254,6 +283,10 @@
     height: 100vh !important; } }
 
 @media screen and (max-height: 730px) {
+  .left-sidebar ul li {
+    padding: 20px 15px; }
+    .left-sidebar ul li a {
+      font-size: 25px; }
   .nineth-section__price h3 {
     font-size: 80px; }
   .second-section__title {
@@ -269,14 +302,12 @@
     margin-bottom: 8px; }
   .eighth-section__list ul:nth-child(2n) li {
     padding-right: 0; }
-  .main-section__mouse-img {
-    display: none; }
   .nineth-section__price h3 {
     font-size: 50px; }
   .nineth-section__price__curr span:nth-child(1) {
-    font-size: 25px; }
+    font-size: 20px; }
   .nineth-section__price__curr span:nth-child(2) {
-    font-size: 18px; }
+    font-size: 14px; }
   .nineth-section__pricetitle {
     font-size: 20px; }
   .second-section ul li:nth-child(1) {

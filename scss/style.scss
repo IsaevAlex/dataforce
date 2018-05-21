@@ -57,12 +57,15 @@ ul{
 			    a{
 					color: $header_link;
 					text-decoration: none;
-					
 					font-family: $regular;
 					font-size: 18px;
-					&:hover{
-						
-						text-decoration: underline;
+					
+				}
+				&:hover{
+					
+					a{
+						border-bottom: 1px dashed $header_link;	
+						// font-family: $bold;
 						font-weight: bold;
 					}
 				}
@@ -557,9 +560,10 @@ ul{
 
 
 .card{
-	width: 350px;
+	width: 400px;
   	height: 400px;
-  	overflow: hidden;
+ 	 
+ 	
   	position: relative;
   	margin-bottom: 60px;
   	box-shadow: 0px 8px 28px -9px rgba(0,0,0,0.75);
@@ -572,10 +576,11 @@ ul{
   	&__button{
   		padding: 10px 20px;
   		z-index: 1;
+		
   		span{
   			font-size: 60px;
   			line-height: 0.7;
-  		}
+		}
 		&:hover{
 			cursor: pointer;
 			
@@ -590,6 +595,7 @@ ul{
   	}
 	&__button-minus{
 		position: absolute;
+		padding: 20px;
 		top: 0;
 		right: 0;
 		background-color: #fff;
@@ -599,7 +605,7 @@ ul{
 	
   	&__over{
   		background-color: #000;
-  		width: 350px;
+  		width: 400px;
   		height: 400px;
   		position: absolute;
   		opacity: 0.7;
@@ -631,6 +637,7 @@ ul{
 .card-1{
 	background: url("../images/card-1.png") no-repeat;
 	background-size: cover;
+	
 }
 .card-2{
 	background: url("../images/card-2.png") no-repeat;
@@ -827,13 +834,15 @@ section{
     	display: flex;
     	justify-content: flex-end;
     	margin-right: 20px;
+    	position: absolute;
+    	right: 0;
     	&:hover{
     		cursor: pointer;
     	}
     }
     ul{
     	li {
-    		padding: 10px 15px;
+    		padding: 20px 15px;
     		a{ 
 	    		font-family: $light;
 	    		font-size: 30px;
@@ -843,10 +852,12 @@ section{
     		}
     		&:hover{
 	    			
-	    			background-color: #fff;
+	    			
 	    			cursor: pointer;
 	    		a{
 	    			color: $logo-blue;
+	    			border-bottom: 1px dashed #fff;
+
 	    		}
 	    	}
     	}
