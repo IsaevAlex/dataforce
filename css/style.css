@@ -270,15 +270,12 @@ section.third-section {
       font-family: ProximaNova-Reg;
       max-width: 450px; }
 
-section.fifth-section {
-  height: 100% !important; }
-
 .fifth-section {
   background: url("../images/fifth-section.png") no-repeat;
   -webkit-background-size: cover;
           background-size: cover; }
   .fifth-section__items {
-    padding-top: 5%;
+    padding-top: 15%;
     padding-bottom: 5%;
     display: -webkit-box;
     display: -webkit-flex;

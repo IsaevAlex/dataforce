@@ -266,9 +266,9 @@ section.third-section{
 	}
 }
 
-section.fifth-section{
-	height: 100% !important;
-}
+// section.fifth-section{
+// 	height: 100% !important;
+// }
 
 .fifth-section{
 	background: url("../images/fifth-section.png") no-repeat;
@@ -276,7 +276,7 @@ section.fifth-section{
 	
 
 	&__items{
-		padding-top: 5%;
+		padding-top: 15%;
 		padding-bottom: 5%;
 		display: flex;
 		justify-content: space-between;
@@ -286,8 +286,6 @@ section.fifth-section{
 }
 
 .sixth-section{
-	// background: url("../images/sixth-section.png") no-repeat;
-	// background-size: cover;
 	background: #ebf2f6;
 	position: relative;
 	z-index: 2;
