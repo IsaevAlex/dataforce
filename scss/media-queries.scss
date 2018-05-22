@@ -219,6 +219,19 @@
 }
 
 @media screen and (max-width: 760px){
+	.fourth-section{
+		display: flex;
+		flex-direction: column;
+    	height: auto !important; 
+    	&__title{
+    		flex: 1;
+
+    	}
+    	&__info{
+			position: relative;
+		}
+	}
+
 	.card{
 		margin-right: 0;
   		
@@ -643,7 +656,7 @@
 
 	.card{
 		&__button{
-  		padding: 10px 15px;
+  		padding: 15px 20px;
   		z-index: 1;
   			span{
   				font-size: 40px;

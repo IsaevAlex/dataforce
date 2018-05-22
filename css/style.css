@@ -159,7 +159,7 @@ ul {
     max-width: 700px; }
   .main-section__desc {
     margin-top: 30px;
-    max-width: 380px; }
+    max-width: 420px; }
   .main-section__btn {
     left: 20px;
     margin-top: 30px; }
@@ -629,7 +629,7 @@ ul {
     max-width: 250px;
     padding: 15px 15px; }
   .card__button {
-    padding: 10px 20px;
+    padding: 20px 20px;
     z-index: 1; }
     .card__button span {
       font-size: 60px;
