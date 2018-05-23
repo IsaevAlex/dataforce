@@ -104,16 +104,16 @@ ul{
 	font-size: 33px;
 	&-letter{
 		&-white{
-			background: url("../images/logo-white.png") no-repeat;
-			background-size: contain;
-			width: 30px;
-			height: 31px;	
+			background: url("../images/logo-white-blue.svg") no-repeat;
+			background-size: 100%;
+			width: 170px;
+			height: 35px;	
 		}
 		&-black{
-			background: url("../images/logo-black.png") no-repeat;	
+			background: url("../images/logo-black-blue.svg") no-repeat;
 			background-size: contain;
-			width: 30px;
-			height: 31px;
+			width: 170px;
+			height: 35px;	
 		}
 	}
 
@@ -191,6 +191,7 @@ ul{
   position: absolute;
   right: 0; 
   bottom: 0;
+
   min-width: 100%; 
   min-height: 100%;
   width: auto; 
@@ -500,6 +501,7 @@ ul{
 		display: flex;
 		justify-content: space-between;
 		padding-top: 40px;
+		align-items: center;
 		padding-bottom: 50px;
 		&__download{
 			margin-right: 10px;
@@ -829,10 +831,10 @@ section{
 
 .left-sidebar{
 	background-color: $logo_blue;
-	height: 100vh;
+	height: 150vh;
 	width: 0;
 	overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
+    padding-top: 40px; /* Place content 60px from the top */
     transition: 0.5s; 
     position: fixed; /* Stay in place */
     z-index: 1500; /* Stay on top */

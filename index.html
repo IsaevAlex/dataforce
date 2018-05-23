@@ -4,7 +4,6 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Главная страница</title>
-		<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link href="css/media-queries.css" rel="stylesheet" type="text/css">
 	</head>
@@ -28,12 +27,15 @@
 		<header class="header header-container">
 			
 				<div class="header__logo logo">
-					<p>
+					<a href="#main-section">
+						<p>
+
 							<span class="logo-letter logo-letter-white"></span>
-							<span class="logo-data">ata</span>
-							<span class="logo-force">force</span>
+							<!-- <span class="logo-data">ata</span>
+							<span class="logo-force">force</span> -->
 						
-					</p>
+						</p>
+					</a>
 				</div>
 				<div class="header__menu">
 					<ul>
@@ -70,7 +72,7 @@
 					</ul>
 				</div>
 				<div class="header__number">
-					<p class="number">8 (800) 100-08-15</p>
+					<p class="number">8 (927) 414-62-88</p>
 				</div>
 				<div class="hamburger-icon">
 					<span onclick="openNav()">
@@ -80,13 +82,15 @@
 			
 		</header>
 		<section class="main-section" id="main-section">
-			<video id="video" class="main-section__video video"  autoplay="autoplay" loop="loop" preload="auto">
-					<source src="files/main-video.mp4">
+			<video autoplay loop id="video" class="main-section__video video" >	
+				<source type="video/mp4" src="files/main-video.mp4" />
 			</video>
 			
+			<!-- <embed class="main-section__video video"  src="files/main-video.mp4"  autostart="false" loop="true"/> -->
+
 			<div class="container">
 				<div class="main-section__title title title-white">
-					<span> Cпециализированная площадка для майнинга криптовалют</span>
+					<span> Cпециализированная площадка для мaйнинга криптовалют</span>
 				</div>
 				<div class="main-section__desc description title-white">
 					<span>
@@ -236,7 +240,7 @@
 					для устройств ASIC в надежном месте
 				</div>
 				<div class="sixth-section__desc description">
-					Полностью автономная ферма с управлением процессами через WEB браузер или Telegram c обратной связью о состоянии системы. Конструкция вмещает Antminer S9 или L3+ в количестве 192 шт.
+					Наша площадка идеально подходит для размещения ваших мобильных майнинг-ферм на базе морских 40-футовых контейнеров.
 				</div>
 				<div class="sixth-section__img">
 					<img src="images/sixth-section-img.png" alt="" class="img-fluid">
@@ -354,7 +358,7 @@
 					Одна цена за все
 				</div>
 				<div class="nineth-section__price">
-					<h3>4.50</h3>
+					<h3>5.5</h3>
 					<div class="nineth-section__price__curr" >
 						<span>Р/кВт</span>
 						<span>с НДС</span>
@@ -424,9 +428,9 @@
 			
 			<div class="tenth-section__conf__wrapper">
 					<div class="container">	
-						<div class="tenth-section__conf">
+						<!-- <div class="tenth-section__conf">
 							<span>Нажимая на кнопку «Отправить» вы даете согласие на обработку персональных данных. Все данные защищены законом «Об обработке персональных данных»</span>
-						</div>
+						</div> -->
 						<div class="tenth-section__contactinfo">
 							<div class="tenth-section__contactinfo__download">
 								<img src="images/tenth-section__conf-img.png" alt="">
@@ -435,9 +439,7 @@
 								</p>
 							</div>
 							<div class="tenth-section__contactinfo__text">
-								<p>Казань, ул. Московская 28,</p>
-								<p>стр 5. 4200000</p>
-								<p>8 (800) 100-08-15</p>
+								<p>8 (927) 414-62-88</p>
 							</div>
 						</div>
 					</div>

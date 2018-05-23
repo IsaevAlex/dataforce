@@ -218,17 +218,20 @@
 	}
 }
 
+
+
 @media screen and (max-width: 760px){
 	.fourth-section{
 		display: flex;
 		flex-direction: column;
-    	height: auto !important; 
+    	// height: auto !important; 
     	&__title{
     		flex: 1;
 
     	}
     	&__info{
-			position: relative;
+			
+
 		}
 	}
 
@@ -587,6 +590,19 @@
 		}
 		
 
+	}
+}
+
+@media screen and (max-height: 600px){
+	.left-sidebar{
+		ul{
+    		li {
+    			padding: 15px 15px;
+	    		a{ 
+		    		font-size: 18px;
+		    	}
+	    	}
+		}
 	}
 }
 

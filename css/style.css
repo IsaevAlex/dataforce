@@ -112,17 +112,17 @@ ul {
   font-family: ProximaNova-Black;
   font-size: 33px; }
   .logo-letter-white {
-    background: url("../images/logo-white.png") no-repeat;
-    -webkit-background-size: contain;
-            background-size: contain;
-    width: 30px;
-    height: 31px; }
+    background: url("../images/logo-white-blue.svg") no-repeat;
+    -webkit-background-size: 100% 100%;
+            background-size: 100%;
+    width: 170px;
+    height: 35px; }
   .logo-letter-black {
-    background: url("../images/logo-black.png") no-repeat;
+    background: url("../images/logo-black-blue.svg") no-repeat;
     -webkit-background-size: contain;
             background-size: contain;
-    width: 30px;
-    height: 31px; }
+    width: 170px;
+    height: 35px; }
   .logo p {
     display: -webkit-box;
     display: -webkit-flex;
@@ -536,6 +536,10 @@ ul {
         -ms-flex-pack: justify;
             justify-content: space-between;
     padding-top: 40px;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding-bottom: 50px; }
     .tenth-section__contactinfo__download {
       margin-right: 10px; }
@@ -822,11 +826,11 @@ section {
 
 .left-sidebar {
   background-color: #1c47e7;
-  height: 100vh;
+  height: 150vh;
   width: 0;
   overflow-x: hidden;
   /* Disable horizontal scroll */
-  padding-top: 60px;
+  padding-top: 40px;
   /* Place content 60px from the top */
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
