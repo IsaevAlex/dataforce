@@ -16,6 +16,25 @@ function openCard(id){
     $('#' + id + " .card__title").css("display","none");
 }
 
+function clickAdvantage(id){
+    switch(id){
+        case 1:
+            $ (".advantage-energy").css("background-image", "url('../images/third-section__icon-1-active.png')");     
+            break;
+        case 2:
+            $(".advantage-count").css("background-image", "url('../images/third-section__icon-2-active.png')");
+            break;
+        case 3:
+            $(".advantage-price").css("background-image", "url('../images/third-section__icon-3-active.png')");
+            break;
+        case 4:
+            $(".advantage-service").css("background-image", "url('../images/third-section__icon-4-active.png')");
+            break;
+        default:
+            console.log( 'Я таких значений не знаю' );
+    }
+}
+
 function closeCard(id){
     $('#' + id + " .card__over").css("display","none");
     $('#' + id + " .card__button-plus").css("display","block");
@@ -23,6 +42,9 @@ function closeCard(id){
 }
 
 $(document).ready(function(){
+    $(".advantage-item").on("click","a", function (event) {
+        $(this).attr("class", 'advantage-energy-click');
+    });
     $(".header").on("click","a", function (event) {
         $(".left-sidebar").css( "width", "0" );
         event.preventDefault();
@@ -44,8 +66,10 @@ $(document).ready(function(){
 
 });
 
+
+
 $(window).scroll(function(){
-    if ($(window).scrollTop() > 400) {
+     if ($(window).scrollTop() > 50) {
         $('.logo-data').css("color","black");
         $('.logo-letter').removeClass('logo-letter-white');
         $('.logo-letter').addClass('logo-letter-black');

@@ -90,7 +90,10 @@ ul {
           color: #5878ef;
           text-decoration: none;
           font-family: ProximaNova-Reg;
-          font-size: 18px; }
+          font-size: 18px;
+          -webkit-transition: font-weight .3s;
+          -o-transition: font-weight .3s;
+          transition: font-weight .3s; }
       .header__menu ul li:nth-child(1) {
         padding-left: 0; }
       .header__menu ul li:nth-child(2) {
@@ -98,11 +101,11 @@ ul {
     .header__menu-hover-white:hover {
       border-bottom: 2px dashed #fff;
       color: #fff;
-      text-shadow: 0 0 .65px #fff, 0 0 .65px #fff; }
+      text-shadow: 0 0 .5px #fff, 0 0 .5px #fff; }
     .header__menu-hover-dark:hover {
       border-bottom: 2px dashed #5878ef;
       color: #5878ef;
-      text-shadow: 0 0 0.65px #5878ef, 0 0 0.65px #5878ef; }
+      font-weight: bold; }
   .header__number {
     font-family: ProximaNova-Bold;
     font-size: 24px;
@@ -164,7 +167,6 @@ ul {
     right: 0; }
   .main-section__title {
     position: relative;
-    z-index: 200;
     max-width: 700px; }
   .main-section__desc {
     margin-top: 30px;
@@ -323,7 +325,7 @@ ul {
     padding-top: 100px; }
   .sixth-section__desc {
     max-width: 440px;
-    padding-top: 20px; }
+    padding-top: 40px; }
   .sixth-section__img {
     position: absolute;
     top: 20%;
@@ -526,7 +528,7 @@ ul {
     padding-top: 50px; }
     .tenth-section__conf span {
       color: #fff;
-      font-size: 12px;
+      font-size: 18px;
       font-family: ProximaNova-Reg;
       width: 500px; }
   .tenth-section__contactinfo {
@@ -544,19 +546,10 @@ ul {
         -ms-flex-align: center;
             align-items: center;
     padding-bottom: 50px; }
-    .tenth-section__contactinfo__download {
-      margin-right: 10px; }
-      .tenth-section__contactinfo__download p a {
-        color: #fff;
-        font-family: ProximaNova-Bold;
-        font-size: 14px;
-        text-decoration: none; }
-        .tenth-section__contactinfo__download p a:hover {
-          text-decoration: underline; }
     .tenth-section__contactinfo__text {
       color: #fff;
       font-family: ProximaNova-Bold;
-      font-size: 14px; }
+      font-size: 16px; }
       .tenth-section__contactinfo__text p {
         color: #fff; }
 
@@ -744,19 +737,18 @@ ul {
     width: 250px;
     display: inline-block; }
 
-.advantage-item:hover .advantage-energy, .advantage-item:active .advantage-energy, .advantage-item:focus .advantage-energy {
-  cursor: pointer;
+.advantage-energy-active {
   background: url("../images/third-section__icon-1-active.png") no-repeat; }
 
-.advantage-item:hover .advantage-count, .advantage-item:active .advantage-count, .advantage-item:focus .advantage-count {
+.advantage-item:hover .advantage-count {
   cursor: pointer;
   background: url("../images/third-section__icon-2-active.png") no-repeat; }
 
-.advantage-item:hover .advantage-price, .advantage-item:active .advantage-price, .advantage-item:focus .advantage-price {
+.advantage-item:hover .advantage-price {
   cursor: pointer;
   background: url("../images/third-section__icon-3-active.png") no-repeat; }
 
-.advantage-item:hover .advantage-service, .advantage-item:active .advantage-service, .advantage-item:focus .advantage-service {
+.advantage-item:hover .advantage-service {
   cursor: pointer;
   background: url("../images/third-section__icon-4-active.png") no-repeat; }
 

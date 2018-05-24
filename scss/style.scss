@@ -55,12 +55,14 @@ ul{
 			box-sizing: border-box;
 			li {
 			    padding: 5px 30px;
+			    
+
 			    a{
 					color: $header_link;
 					text-decoration: none;
 					font-family: $regular;
 					font-size: 18px;
-				
+				    transition: font-weight .3s;
 				}
 
 					
@@ -80,7 +82,7 @@ ul{
 			&:hover{
 				border-bottom: 2px dashed #fff;	
 				color: #fff;
-				text-shadow: 0 0 .65px #fff, 0 0 .65px #fff;
+				text-shadow: 0 0 .5px #fff, 0 0 .5px #fff;
 				
 			}
 		}
@@ -88,7 +90,9 @@ ul{
 			&:hover{
 				border-bottom: 2px dashed $header-link;	
 				color: $header-link;
-				text-shadow: 0 0 .65px $header-link, 0 0 .65px $header-link;
+				// text-shadow: 0 0 .65px $header-link, 0 0 .65px $header-link;
+				// font-family: $bold;
+				font-weight: bold;
 			}
 		}
 	}
@@ -150,10 +154,7 @@ ul{
     
 	&__title{
 		position: relative;
-		z-index: 200;
 		max-width: 700px;
-		
-		
 	}
 	&__desc{
 		margin-top: 30px;
@@ -335,7 +336,7 @@ ul{
 
 	&__desc{
 		max-width: 440px;	
-		padding-top: 20px;	
+		padding-top: 40px;	
 	}
 
 	&__img{
@@ -498,7 +499,7 @@ ul{
 		padding-top: 50px;
 		span{
 			color: #fff;
-			font-size: 12px;
+			font-size: 18px;
 			font-family: $regular;
 			width: 500px;
 		}
@@ -510,22 +511,22 @@ ul{
 		padding-top: 40px;
 		align-items: center;
 		padding-bottom: 50px;
-		&__download{
-			margin-right: 10px;
-			p a{
-				color: #fff;
-				font-family: $bold;
-				font-size: 14px;
-				text-decoration: none;
-				&:hover{
-					text-decoration: underline;
-				}
-			}
-		}
+		// &__download{
+		// 	margin-right: 10px;
+		// 	p a{
+		// 		color: #fff;
+		// 		font-family: $bold;
+		// 		font-size: 14px;
+		// 		text-decoration: none;
+		// 		&:hover{
+		// 			text-decoration: underline;
+		// 		}
+		// 	}
+		// }
 		&__text{
 			color: #fff;
 			font-family: $bold;
-			font-size: 14px;
+			font-size: 16px;
 			p{
 				color: #fff;
 			}
@@ -728,22 +729,26 @@ ul{
 	}
 }
 
-.advantage-item:hover .advantage-energy, .advantage-item:active .advantage-energy, .advantage-item:focus .advantage-energy{
-	cursor: pointer;
-	background: url("../images/third-section__icon-1-active.png") no-repeat;
+// .advantage-item:hover .advantage-energy{
+// 	cursor: pointer;
+// 	background: url("../images/third-section__icon-1-active.png") no-repeat;
+// }
+
+.advantage-energy-active{
+	background: url("../images/third-section__icon-1-active.png") no-repeat;	
 }
 
-.advantage-item:hover .advantage-count, .advantage-item:active .advantage-count, .advantage-item:focus .advantage-count{
+.advantage-item:hover .advantage-count{
 	cursor: pointer;
 	background: url("../images/third-section__icon-2-active.png") no-repeat;
 }
 
-.advantage-item:hover .advantage-price, .advantage-item:active .advantage-price, .advantage-item:focus .advantage-price{
+.advantage-item:hover .advantage-price{
 	cursor: pointer;
 	background: url("../images/third-section__icon-3-active.png") no-repeat;
 }
 
-.advantage-item:hover .advantage-service, .advantage-item:active .advantage-service, .advantage-item:focus .advantage-service{
+.advantage-item:hover .advantage-service{
 	cursor: pointer;
 	background: url("../images/third-section__icon-4-active.png") no-repeat;
 }
