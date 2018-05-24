@@ -557,6 +557,8 @@ ul {
       color: #fff;
       font-family: ProximaNova-Bold;
       font-size: 14px; }
+      .tenth-section__contactinfo__text p {
+        color: #fff; }
 
 .contact-form__inputs {
   display: -webkit-box;
