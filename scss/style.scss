@@ -728,22 +728,22 @@ ul{
 	}
 }
 
-.advantage-item:hover .advantage-energy, .advantage-item:active .advantage-energy{
+.advantage-item:hover .advantage-energy, .advantage-item:active .advantage-energy, .advantage-item:focus .advantage-energy{
 	cursor: pointer;
 	background: url("../images/third-section__icon-1-active.png") no-repeat;
 }
 
-.advantage-item:hover .advantage-count, .advantage-item:active .advantage-count{
+.advantage-item:hover .advantage-count, .advantage-item:active .advantage-count, .advantage-item:focus .advantage-count{
 	cursor: pointer;
 	background: url("../images/third-section__icon-2-active.png") no-repeat;
 }
 
-.advantage-item:hover .advantage-price, .advantage-item:active .advantage-price{
+.advantage-item:hover .advantage-price, .advantage-item:active .advantage-price, .advantage-item:focus .advantage-price{
 	cursor: pointer;
 	background: url("../images/third-section__icon-3-active.png") no-repeat;
 }
 
-.advantage-item:hover .advantage-service, .advantage-item:active .advantage-service{
+.advantage-item:hover .advantage-service, .advantage-item:active .advantage-service, .advantage-item:focus .advantage-service{
 	cursor: pointer;
 	background: url("../images/third-section__icon-4-active.png") no-repeat;
 }
