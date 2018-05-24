@@ -154,12 +154,22 @@ ul {
   -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  background: url("../files/main.gif") no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover; }
+  .main-section__back-img {
+    position: absolute;
+    top: 20%;
+    right: 0; }
   .main-section__title {
+    position: relative;
+    z-index: 200;
     max-width: 700px; }
   .main-section__desc {
     margin-top: 30px;
-    max-width: 420px; }
+    max-width: 420px;
+    z-index: 2; }
   .main-section__btn {
     left: 20px;
     margin-top: 30px; }
@@ -178,11 +188,6 @@ ul {
             animation-iteration-count: infinite; }
     .main-section__mouse-img:hover {
       cursor: pointer; }
-  .main-section__back-img {
-    position: absolute;
-    top: 20%;
-    right: 0;
-    z-index: -1; }
 
 @-webkit-keyframes main-section-img-ahimation {
   0%, 100% {
