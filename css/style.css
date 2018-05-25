@@ -529,9 +529,8 @@ ul {
     padding-top: 50px; }
     .tenth-section__conf span {
       color: #fff;
-      font-size: 18px;
-      font-family: ProximaNova-Reg;
-      width: 500px; }
+      font-size: 1.6rem;
+      font-family: ProximaNova-Reg; }
   .tenth-section__contactinfo {
     display: -webkit-box;
     display: -webkit-flex;
