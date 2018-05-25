@@ -729,10 +729,10 @@ ul{
 	}
 }
 
-// .advantage-item:hover .advantage-energy{
-// 	cursor: pointer;
-// 	background: url("../images/third-section__icon-1-active.png") no-repeat;
-// }
+.advantage-item:hover .advantage-energy{
+	cursor: pointer;
+	background: url("../images/third-section__icon-1-active.png") no-repeat;
+}
 
 .advantage-energy-active{
 	background: url("../images/third-section__icon-1-active.png") no-repeat;	

@@ -16,24 +16,24 @@ function openCard(id){
     $('#' + id + " .card__title").css("display","none");
 }
 
-function clickAdvantage(id){
-    switch(id){
-        case 1:
-            $ (".advantage-energy").css("background-image", "url('../images/third-section__icon-1-active.png')");     
-            break;
-        case 2:
-            $(".advantage-count").css("background-image", "url('../images/third-section__icon-2-active.png')");
-            break;
-        case 3:
-            $(".advantage-price").css("background-image", "url('../images/third-section__icon-3-active.png')");
-            break;
-        case 4:
-            $(".advantage-service").css("background-image", "url('../images/third-section__icon-4-active.png')");
-            break;
-        default:
-            console.log( 'Я таких значений не знаю' );
-    }
-}
+// function clickAdvantage(id){
+//     switch(id){
+//         case 1:
+//             $(".advantage-energy").css("background-image", "url('../images/third-section__icon-1-active.png')");     
+//             break;
+//         case 2:
+//             $(".advantage-count").css("background-image", "url('../images/third-section__icon-2-active.png')");
+//             break;
+//         case 3:
+//             $(".advantage-price").css("background-image", "url('../images/third-section__icon-3-active.png')");
+//             break;
+//         case 4:
+//             $(".advantage-service").css("background-image", "url('../images/third-section__icon-4-active.png')");
+//             break;
+//         default:
+//             console.log( 'Я таких значений не знаю' );
+//     }
+// }
 
 function closeCard(id){
     $('#' + id + " .card__over").css("display","none");
