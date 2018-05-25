@@ -169,6 +169,7 @@ ul {
     position: relative;
     max-width: 700px; }
   .main-section__desc {
+    position: relative;
     margin-top: 30px;
     max-width: 420px;
     z-index: 2; }
