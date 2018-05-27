@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="/images/favicon.png" type="image/png">
 		<!-- <meta name=”viewport” content=”user-scalable=no” />
 		<meta name="format-detection" content="telephone=no" />
   		<meta name="msapplication-tap-highlight" content="no" />
@@ -100,11 +101,11 @@
 						Размещаем и обслуживаем ваше оборудование для майнинга на площадках с большим запасом собственной электроэнергии.
 					</span>
 				</div>
-				<a href="#tenth-section">
-					<button class="main-section__btn btn btn-primary">
+				
+					<button class="main-section__btn btn btn-primary open-modal-btn">
 						Забронировать место
 					</button>
-				</a>
+				
 				<div class="main-section__mouse-img">
 					<a href="#second-section">
 						<img src="images/mouse.png" alt="" class="img-fluid"> 			
@@ -203,7 +204,7 @@
 					<p>
 						Здание оснащено дизельными подстанциями на случай выключения света в городе, переключение составляет несколько минут. Проход в здание осуществляется строго по пропускам и через 2 поста охраны.
 					</p>
-					<a href="#tenth-section">
+					<a href="#openModal">
 						<button class="fourth-section__btn btn btn-white">
 							Забронировать место
 						</button>
@@ -412,9 +413,9 @@
 					<div class="tenth-section__form">
 						<form class="contact-form">
 							<div class="contact-form__inputs">
-								<input type="text" name="" placeholder="Ваше имя">
-								<input type="text" name="" placeholder="Ваш телефон">
-								<input type="text" name="" placeholder="Ваш e-mail">
+								<input type="text"  class="input-primary" name="" placeholder="Ваше имя">
+								<input type="text" class="input-primary" name="" placeholder="Ваш телефон">
+								<input type="text" class="input-primary" name="" placeholder="Ваш e-mail">
 							</div>
 							<div class="contact-form__button">
 								<button class="btn btn-primary">
@@ -443,10 +444,49 @@
 			</div>
 			</div>
 		</section>
+	
+		 <div class="modalDialog__cover"></div>
+		 <div class="modalDialog">
+		 	<div class="modalDialog__content">
+		 		<!-- <a href="#close" title="Close" class="close">X</a> -->
+				<div class="modalDialog__title title title-white">
+					<span>Забронировать место</span>
+				</div>
+				<div class="modalDialog__form">
+				<form class="contact-form" onsubmit="return false" method="post">
+					<div class="contact-form__inputs">
+						<input type="text" class="input-white" name="" placeholder="Ваше имя">
+						<input type="text" class="input-white" name="" placeholder="Ваш телефон">
+						<input type="text"  class="input-white" name="" placeholder="Ваш e-mail">
+					</div>
+					<div class="contact-form__button">
+						<button class="btn btn-white">
+							Забронировать
+						</button> 	
+					</div>
+				</form>
+				</div>
+				<div class="modalDialog__text">
+				<span>
+					Нажимая на кнопку "Отправить" вы даете согласие на обработку персональных данных. Все данные защищены законом "Об обработке персональных данных" 
+				</span>
+				</div>
+		 	</div>
+		 </div>
+		 <div class="modalDialog-2">
+		 	<div class="modalDialog-2__thanks">
+		 		<!-- <a href="#close" title="Close" class="close">X</a> -->
+				<div class="modalDialog-2__title title title-white">
+					<span>Cпасибо!</span>
+				</div>
+				<div class="modalDialog-2__subtitle subtitle title-white">
+					<span>Место успешно забронировано.</span>
+				</div>
+				
+		 	</div>
+		 </div>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 		<script src="js/main.js"></script>
-		<script src="">
-			
-		</script>
+		
 </body>
 </html>

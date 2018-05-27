@@ -10,6 +10,44 @@ function closeNav() {
     document.getElementsByClassName("hamburger-icon")[0].style.display = 'block';
 }
 
+// open modal
+var  wrap = $('body'),
+     btn = $('.open-modal-btn'),
+     modal = $('.modalDialog__cover, .modalDialog, .modalDialog__content');
+     modal2 = $('.modalDialog__cover, .modalDialog-2, .modalDialog-2__thanks');
+
+btn.on('click', function() {
+  modal.fadeIn();
+});
+
+// close modal
+$('.modalDialog-2').click(function() {
+  wrap.on('click', function(event) {
+    var select = $('.modalDialog-2__thanks');
+    if ($(event.target).closest(select).length)
+      return;
+    modal2.fadeOut();
+    wrap.unbind('click');
+  });
+});
+
+// close modal
+$('.modalDialog').click(function() {
+  wrap.on('click', function(event) {
+    var select = $('.modalDialog__content');
+    if ($(event.target).closest(select).length)
+      return;
+    modal.fadeOut();
+    wrap.unbind('click');
+  });
+});
+
+$('form').on('submit', function() {
+    modal.fadeOut();
+    console.log("Jnghfdbkjcm");
+    modal2.fadeIn();
+});
+
 function openCard(id){
     $('#' + id + " .card__over").css("display","block");
     $('#' + id + " .card__button-plus").css("display","none");
@@ -34,6 +72,7 @@ function openCard(id){
 //             console.log( 'Я таких значений не знаю' );
 //     }
 // }
+
 
 function closeCard(id){
     $('#' + id + " .card__over").css("display","none");
