@@ -488,7 +488,9 @@
 			display: none;
 		}
 		display: flex;
-		justify-content: flex-end;
+		justify-content: center;
+		padding-top: 130px;
+
 		&__btn{
 			margin-bottom: 50px;
 		}
