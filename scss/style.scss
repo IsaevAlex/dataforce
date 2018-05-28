@@ -291,9 +291,10 @@ ul{
 	justify-content: center;
 	// background: url("../images/bg.jpg") no-repeat;
 	// background-size: cover;
-	background: linear-gradient(316deg, #191725, #092a6c, #1f163c, #160c67, #3c1132, #066c57);
-	background-size: 1200% 1200%;
-	animation: AnimationName 9s ease infinite;
+	background: linear-gradient(316deg, #191725, #092a6c, #1f163c, #160c67);
+	background-size: 800% 800%;
+	animation: AnimationName 11s ease infinite;
+
 	
 	@keyframes AnimationName { 
 	    0%{background-position:5% 0%}
