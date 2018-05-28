@@ -197,6 +197,8 @@
     font-size: 14px; } }
 
 @media screen and (max-width: 600px) {
+  .nineth-section__img img {
+    height: 40px; }
   .eighth-section__desc {
     padding-top: 10px; }
   .eighth-section__list {

@@ -340,6 +340,14 @@
 // }
 
 @media screen and (max-width: 600px){
+	.nineth-section{
+		&__img{
+			img{
+				height: 40px;	
+			}
+		}
+	}
+
 	.eighth-section{
 		&__desc{
 			padding-top: 10px;

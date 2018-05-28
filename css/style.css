@@ -181,7 +181,7 @@ ul {
     .header__menu-hover-dark:hover {
       border-bottom: 2px dashed #5878ef;
       color: #5878ef;
-      font-weight: bold; }
+      text-shadow: 0 0 0.1px #5878ef; }
   .header__number {
     font-family: ProximaNova-Bold;
     font-size: 24px;
