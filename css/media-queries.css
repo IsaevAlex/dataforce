@@ -324,6 +324,8 @@
       font-size: 18px; } }
 
 @media screen and (max-width: 400px) {
+  .modalDialog-2__thanks .subtitle {
+    font-size: 22px; }
   .eighth-section__title {
     font-size: 24px !important;
     line-height: 0.9; }
@@ -359,3 +361,7 @@
     .fourth-section__info p {
       font-size: 14px;
       max-width: 450px; } }
+
+@media screen and (max-width: 300px) {
+  .modalDialog-2__thanks .subtitle {
+    font-size: 14px; } }

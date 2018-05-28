@@ -66,10 +66,10 @@ html {
   padding: 20px;
   z-index: 200; }
   .modalDialog-2__thanks {
-    width: 50%;
+    width: 40%;
     position: relative;
     margin: 10% auto;
-    padding: 20px 20px 35px 20px;
+    padding: 45px 20px 45px 20px;
     -webkit-border-radius: 10px;
             border-radius: 10px;
     background: #1c47e7;
@@ -234,9 +234,29 @@ ul {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: url("../images/bg.jpg") no-repeat;
-  -webkit-background-size: cover;
-          background-size: cover; }
+  background: -webkit-linear-gradient(134deg, #191725, #03205a, #271b4d, #1d0058);
+  background: -o-linear-gradient(134deg, #191725, #03205a, #271b4d, #1d0058);
+  background: linear-gradient(316deg, #191725, #03205a, #271b4d, #1d0058);
+  -webkit-background-size: 800% 800%;
+          background-size: 800% 800%;
+  -webkit-animation: AnimationName 23s ease infinite;
+  animation: AnimationName 23s ease infinite; }
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 5% 0%; }
+  50% {
+    background-position: 96% 100%; }
+  100% {
+    background-position: 5% 0%; } }
+
+@keyframes AnimationName {
+  0% {
+    background-position: 5% 0%; }
+  50% {
+    background-position: 96% 100%; }
+  100% {
+    background-position: 5% 0%; } }
   .main-section__back-img {
     position: absolute;
     top: 20%;

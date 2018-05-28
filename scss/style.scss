@@ -102,11 +102,10 @@ html {
 	  padding: 20px;
 	  z-index: 200;
 	  &__thanks{
-
-		width: 50%;
+		width: 40%;
 		position: relative;
 		margin: 10% auto;
-		padding: 20px 20px 35px 20px;
+		padding: 45px 20px 45px 20px;
 		border-radius: 10px;
 		background: $logo_blue;
 		display: none;
@@ -294,8 +293,36 @@ ul{
 	flex-direction: column;
 	align-items: flex-start;
 	justify-content: center;
-	background: url("../images/bg.jpg") no-repeat;
-	background-size: cover;
+	// background: url("../images/bg.jpg") no-repeat;
+	// background-size: cover;
+	background: linear-gradient(316deg, #191725, #03205a, #271b4d, #1d0058);
+	background-size: 800% 800%;
+
+	-webkit-animation: AnimationName 23s ease infinite;
+	-moz-animation: AnimationName 23s ease infinite;
+	-o-animation: AnimationName 23s ease infinite;
+	animation: AnimationName 23s ease infinite;
+
+	@-webkit-keyframes AnimationName {
+	    0%{background-position:5% 0%}
+	    50%{background-position:96% 100%}
+	    100%{background-position:5% 0%}
+	}
+	@-moz-keyframes AnimationName {
+	    0%{background-position:5% 0%}
+	    50%{background-position:96% 100%}
+	    100%{background-position:5% 0%}
+	}
+	@-o-keyframes AnimationName {
+	    0%{background-position:5% 0%}
+	    50%{background-position:96% 100%}
+	    100%{background-position:5% 0%}
+	}
+	@keyframes AnimationName { 
+	    0%{background-position:5% 0%}
+	    50%{background-position:96% 100%}
+	    100%{background-position:5% 0%}
+	}
 
 	&__back-img{
 		position: absolute;
