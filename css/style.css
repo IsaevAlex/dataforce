@@ -234,13 +234,13 @@ ul {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: -webkit-linear-gradient(134deg, #191725, #03205a, #271b4d, #1d0058);
-  background: -o-linear-gradient(134deg, #191725, #03205a, #271b4d, #1d0058);
-  background: linear-gradient(316deg, #191725, #03205a, #271b4d, #1d0058);
-  -webkit-background-size: 800% 800%;
-          background-size: 800% 800%;
-  -webkit-animation: AnimationName 23s ease infinite;
-  animation: AnimationName 23s ease infinite; }
+  background: -webkit-linear-gradient(134deg, #191725, #092a6c, #1f163c, #160c67, #3c1132, #066c57);
+  background: -o-linear-gradient(134deg, #191725, #092a6c, #1f163c, #160c67, #3c1132, #066c57);
+  background: linear-gradient(316deg, #191725, #092a6c, #1f163c, #160c67, #3c1132, #066c57);
+  -webkit-background-size: 1200% 1200%;
+          background-size: 1200% 1200%;
+  -webkit-animation: AnimationName 9s ease infinite;
+          animation: AnimationName 9s ease infinite; }
 
 @-webkit-keyframes AnimationName {
   0% {

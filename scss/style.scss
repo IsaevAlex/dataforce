@@ -291,34 +291,15 @@ ul{
 	justify-content: center;
 	// background: url("../images/bg.jpg") no-repeat;
 	// background-size: cover;
-	background: linear-gradient(316deg, #191725, #03205a, #271b4d, #1d0058);
-background-size: 800% 800%;
-
--webkit-animation: AnimationName 23s ease infinite;
--moz-animation: AnimationName 23s ease infinite;
--o-animation: AnimationName 23s ease infinite;
-animation: AnimationName 23s ease infinite;
-
-@-webkit-keyframes AnimationName {
-    0%{background-position:5% 0%}
-    50%{background-position:96% 100%}
-    100%{background-position:5% 0%}
-}
-@-moz-keyframes AnimationName {
-    0%{background-position:5% 0%}
-    50%{background-position:96% 100%}
-    100%{background-position:5% 0%}
-}
-@-o-keyframes AnimationName {
-    0%{background-position:5% 0%}
-    50%{background-position:96% 100%}
-    100%{background-position:5% 0%}
-}
-@keyframes AnimationName { 
-    0%{background-position:5% 0%}
-    50%{background-position:96% 100%}
-    100%{background-position:5% 0%}
-}
+	background: linear-gradient(316deg, #191725, #092a6c, #1f163c, #160c67, #3c1132, #066c57);
+	background-size: 1200% 1200%;
+	animation: AnimationName 9s ease infinite;
+	
+	@keyframes AnimationName { 
+	    0%{background-position:5% 0%}
+	    50%{background-position:96% 100%}
+	    100%{background-position:5% 0%}
+	}
 
 	&__back-img{
 		position: absolute;
