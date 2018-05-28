@@ -296,7 +296,7 @@
 					</div>
 					<div class="card card-3" id="3">
 						<div class="card__over__title title-white">
-							<span>100%-ную отказоустойчивость</span>
+							<span>Максимальная отказоустойчивость</span>
 						</div>
 						<div class="card__button card__button-plus" onclick="openCard(3)"">
 							<span>+</span>
@@ -411,7 +411,7 @@
 						<span>Контакты</span>
 					</div>
 					<div class="tenth-section__form">
-						<form class="contact-form" onsubmit="return false" method="post">
+						<form class="contact-form" method="post">
 							<div class="contact-form__inputs">
 								<input type="text"  class="input-primary" name="" placeholder="Ваше имя">
 								<input type="text" class="input-primary" name="" placeholder="Ваш телефон">
@@ -453,11 +453,11 @@
 					<span>Забронировать место</span>
 				</div>
 				<div class="modalDialog__form">
-				<form class="contact-form" onsubmit="return false" method="post">
+				<form class="contact-form" method="post">
 					<div class="contact-form__inputs">
-						<input type="text" class="input-white" name="" placeholder="Ваше имя">
-						<input type="text" class="input-white" name="" placeholder="Ваш телефон">
-						<input type="text"  class="input-white" name="" placeholder="Ваш e-mail">
+						<input type="text" class="input-white" name="name" placeholder="Ваше имя" required >
+						<input type="tel" class="input-white" name="phone" placeholder="Ваш телефон" required >
+						<input type="text"  class="input-white" name="mail" placeholder="Ваш e-mail" required >
 					</div>
 					<div class="contact-form__button">
 						<button class="btn btn-white">
@@ -480,7 +480,7 @@
 					<span>Cпасибо!</span>
 				</div>
 				<div class="modalDialog-2__subtitle subtitle title-white">
-					<span>Место успешно забронировано.</span>
+					<span>В ближайшее время мы свяжемся с Вами.</span>
 				</div>
 				
 		 	</div>

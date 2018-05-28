@@ -260,6 +260,7 @@
   .nineth-section__price {
     padding-left: 45px; }
   .main-section {
+    overflow: hidden;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
